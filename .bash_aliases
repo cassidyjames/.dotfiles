@@ -1,3 +1,15 @@
 # Bash Aliases. Custom things Cassidy has added to his install.
 alias generate-password='< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;'
+alias emake='rm -rf build; mkdir build; cd build; cmake -DCMAKE_INSTALL_PREFIX=/usr ..; make; cd ..'
 
+# From https://gist.github.com/rajeshg/712300
+function mkcd {
+  last=$(eval "echo \$$#")
+  if [ ! -n "$last" ]; then
+    echo "Enter a directory name"
+  elif [ -d $last ]; then
+    echo "\`$last' already exists"
+  else
+    mkdir $@ && cd $last
+  fi
+}
