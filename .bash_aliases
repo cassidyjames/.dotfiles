@@ -1,6 +1,18 @@
-# Bash Aliases. Custom things Cassidy has added to his install.
-alias generate-password='< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;'
+# File navigating and whatnot
+alias ..='cd ..'
+alias cd..='cd ..'
+alias mkdir='mkdir -pv'
+
+# elementary things
 alias emake='rm -rf build; mkdir build; cd build; cmake -DCMAKE_INSTALL_PREFIX=/usr ..; make; cd ..'
+
+# Make grep better
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Other
+alias generate-password='< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;'
 
 # From https://gist.github.com/rajeshg/712300
 function mkcd {
