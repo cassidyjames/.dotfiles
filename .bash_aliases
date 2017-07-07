@@ -4,7 +4,16 @@ alias cd..='cd ..'
 alias mkdir='mkdir -pv'
 
 # elementary things
-alias emake='rm -rf build; mkdir build; cd build; cmake -DCMAKE_INSTALL_PREFIX=/usr ..; make; cd ..'
+alias emake='rm -rf build; mkdir build; cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr .. && make && sudo make install && cd .. && echo "Built and installed!"'
+function github-clone {
+  IFS='/' read -ra GITSTRING <<< "$@";
+  owner="${GITSTRING[0]}";
+  repo="${GITSTRING[1]}";
+  mkdir -pv "$owner";
+  cd "$owner";
+  git clone git@github.com:"$@".git;
+  cd "$repo";
+}
 
 # Make grep better
 alias grep='grep --color=auto'
