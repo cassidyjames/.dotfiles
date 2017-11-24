@@ -19,11 +19,12 @@ function github-clone {
   IFS='/' read -ra GITSTRING <<< "$@";
   owner="${GITSTRING[0]}";
   repo="${GITSTRING[1]}";
-  mkdir -pv "$owner";
-  cd "$owner";
+  mkdir -pv "$HOME/Projects/$owner";
+  cd "$HOME/Projects/$owner";
   git clone git@github.com:"$@".git;
   cd "$repo";
 }
+alias ghc='github-clone'
 
 # From https://gist.github.com/rajeshg/712300
 function mkcd {
