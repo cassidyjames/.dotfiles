@@ -5,4 +5,5 @@ If you don't have your own `.bash_aliases` file and just want to use mine, you c
 
 ```shell
 ln -s ~/Projects/cassidyjames/bash-aliases/.bash_aliases ~/.bash_aliases
+source ~/.bash_aliases
 ```
