@@ -6,6 +6,7 @@ To install all of it in one go:
 
 ```shell
 ln -s ~/Projects/cassidyjames/dotfiles/.bash_aliases ~/.bash_aliases
+ln -s ~/Projects/cassidyjames/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Projects/cassidyjames/dotfiles/.hidden ~/.hidden
 source ~/.bash_aliases
 ```
@@ -19,6 +20,14 @@ Handy aliases I use in bash.
 ```shell
 ln -s ~/Projects/cassidyjames/dotfiles/.bash_aliases ~/.bash_aliases
 source ~/.bash_aliases
+```
+
+## .gitconfig
+
+Just my personal Git configuration. Nothing special.
+
+```shell
+ln -s ~/Projects/cassidyjames/dotfiles/.gitconfig ~/.gitconfig
 ```
 
 ## .hidden
