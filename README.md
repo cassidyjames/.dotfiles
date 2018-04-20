@@ -8,6 +8,7 @@ To install all of it in one go:
 ln -s ~/Projects/cassidyjames/dotfiles/.bash_aliases ~/.bash_aliases
 ln -s ~/Projects/cassidyjames/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Projects/cassidyjames/dotfiles/.hidden ~/.hidden
+ln -s ~/Projects/cassidyjames/dotfiles/.inputrc ~/.inputrc
 source ~/.bash_aliases
 ```
 
@@ -37,3 +38,12 @@ Hide some annoying folders that end up cluttering up `~/`. Even if some of these
 ```shell
 ln -s ~/Projects/cassidyjames/dotfiles/.hidden ~/.hidden
 ```
+
+## .inputrc
+
+Enable case-insensitive tab completion, like on elementary OS
+
+```shell
+ln -s ~/Projects/cassidyjames/dotfiles/.inputrc ~/.inputrc
+```
+
