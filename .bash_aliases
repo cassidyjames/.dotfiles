@@ -9,6 +9,7 @@ alias vala-lint='io.elementary.vala-lint'
 alias eninja='rm -rf build; meson build --prefix=/usr; cd build && ninja test && sudo ninja install; cd ..'
 alias emeson='eninja'
 alias code='nohup io.elementary.code . &>/dev/null &'
+alias files='nohup io.elementary.files . &>/dev/null &'
 
 # Make grep better
 alias grep='grep --color=auto'
