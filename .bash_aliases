@@ -6,7 +6,7 @@ alias mkdir='mkdir -pv'
 # elementary things
 alias emake='rm -rf build; mkdir build; cd build && cmake -DCMAKE_INSTALL_PREFIX=/usr .. && make && sudo make install && cd .. && echo "Built and installed!"'
 alias vala-lint='io.elementary.vala-lint'
-alias eninja='rm -rf build; meson build --prefix=/usr; cd build && ninja test && sudo ninja install; cd ..'
+alias eninja='rm -rf build; meson build --prefix=/usr; cd build && ninja && sudo ninja install; cd ..'
 alias emeson='eninja'
 alias code='nohup io.elementary.code . &>/dev/null &'
 alias files='nohup io.elementary.files . &>/dev/null &'
