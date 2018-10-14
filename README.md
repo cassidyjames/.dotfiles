@@ -5,10 +5,7 @@ My generic Linux dotfiles. Archived here for me more than anything, but you migh
 To install all of it in one go:
 
 ```shell
-ln -s ~/Projects/cassidyjames/dotfiles/.bash_aliases ~/.bash_aliases
-ln -s ~/Projects/cassidyjames/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Projects/cassidyjames/dotfiles/.hidden ~/.hidden
-ln -s ~/Projects/cassidyjames/dotfiles/.inputrc ~/.inputrc
+./install.sh
 source ~/.bash_aliases
 ```
 
