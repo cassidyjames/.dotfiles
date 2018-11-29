@@ -45,3 +45,6 @@ function mkcd {
     mkdir $@ && cd $last
   fi
 }
+
+# GitHub Pages/jekyll stuff
+alias js="bundle exec jekyll serve --host 0.0.0.0"
