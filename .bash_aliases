@@ -29,7 +29,7 @@ function github-clone {
   repo="${GITSTRING[1]}";
   mkdir -pv "$HOME/Projects/$owner";
   cd "$HOME/Projects/$owner";
-  git clone git@github.com:"$@".git;
+  git clone git@github.com:"$@".git || git clone https://github.com/"$@".git;
   cd "$repo";
 }
 alias ghc='github-clone'
