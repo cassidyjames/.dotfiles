@@ -47,4 +47,7 @@ function mkcd {
 }
 
 # GitHub Pages/jekyll stuff
-alias js="bundle exec jekyll serve --host 0.0.0.0"
+alias gh-serve="bundle exec jekyll serve --host 0.0.0.0 --drafts --future"
+
+# zsync https://github.com/AppImage/zsync-curl
+alias zsync="zsync_curl"
