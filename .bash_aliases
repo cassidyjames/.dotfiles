@@ -51,3 +51,11 @@ alias gh-serve="bundle exec jekyll serve --host 0.0.0.0 --drafts --future"
 
 # zsync https://github.com/AppImage/zsync-curl
 alias zsync="zsync_curl"
+
+# Try to make Meson happy about the Flatpak'd Inkscape
+alias inkscape="flatpak run org.inkscape.Inkscape"
+
+# More easily test stylesheets
+function gtk-theme {
+  gsettings set org.gnome.desktop.interface gtk-theme "$@" || gsettings reset org.gnome.desktop.interface gtk-theme;
+}
